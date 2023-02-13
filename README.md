@@ -28,7 +28,12 @@ The code first imports necessary packages such as Pandas, Numpy, Matplotlib, Plo
 
 After reading the data file into a Pandas dataframe and transforming the gender column into a one-hot encoded representation, the code selects only two columns: "Annual Income (k$)" and "Spending Score (1-100)" as the features for clustering.
 
+![download (4)](https://user-images.githubusercontent.com/75095471/218525844-39cc32fc-1720-41ff-9e7e-4f55a8792a4e.png)
+
+
 The first step is to determine the optimal number of clusters using the Elbow Method. The code uses the KMeans algorithm and calculates the inertia (sum of squared distances between the observations and their closest cluster center) for each number of clusters between 1 and 10. The result is plotted in a graph with the number of clusters on the x-axis and the inertia on the y-axis. The optimal number of clusters can be identified as the "elbow" in the graph.
+
+![download (3)](https://user-images.githubusercontent.com/75095471/218525604-dc3b2cdb-7275-4842-9e06-463fc71a783d.png)
 
 
 The code then fits the KMeans algorithm with the optimal number of clusters (5 in this case) to the data and plots the results. Each customer is represented by a dot, with different colors representing different clusters.
